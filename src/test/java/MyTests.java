@@ -17,7 +17,21 @@ public class MyTests {
 
     @Test
     public void testSelectionShuffle() {
+        @Test
+    public void testSelectionShuffle() {
         int[] arr = {1, 2, 3, 4, 5, 21, 22, 23, 24, 25};
-        assertNotEquals(Arrays.toString(arr), Arrays.toString(MyMain.selectionShuffle(arr)), "Selection shuffle should not return an array that matches the original array");
+        String str = Arrays.toString(arr);
+
+        // Test that shuffled array is not null
+        int[] arr2 = (MyMain.selectionShuffle(arr));
+        assertNotNull(arr2, "The shuffled array cannot be equal to null");
+
+        // Test that shuffled array is not exact match to original array
+        assertNotEquals(str, Arrays.toString(arr2), "Selection shuffle should not return an array that matches the original array");
+
+        // Test that shuffled array contains the same values as the original (sorted) array
+        Arrays.sort(arr2);
+        assertEquals(str, Arrays.toString(arr2), "Your shuffled array contains different integers from the original array");
+    }
     }
 }
