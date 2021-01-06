@@ -1,21 +1,37 @@
-# ArrayList Practice
+# Shuffle
 
-In this assignment, you'll be writing three methods related to ArrayLists. 
+In this assignment, you'll be writing two different methods to shuffle. (Shuffling will be very useful for any card games that we'd want to code, such as the Elevens game). To keeps things a bit simpler, we'll just be shuffling **arrays of integers** for this assignment. 
 
-The first method is countOdd(). This method takes an ArrayList\<Integer\> as input and returns the number of odd numbers in the ArrayList. The method should have the following signature:
+[1] The first method is **perfectShuffle()**. This method takes an int array as input (the unshuffled array) and returns another int array (the shuffled array). A "perfect shuffle" of a deck of cards is when a deck is split in half and the two half-decks are perfectly interwoven as shown below:
+
+![Image of Shuffle](shuffle.jpg)
+
+The perfectShuffle() method should shuffle an int array in the same way. For instance, consider the following int array before and after shuffling.
+
+Before shuffling: [1, 2, 3, 4, 5, 21, 22, 23, 24, 25]
+
+After shuffliing: [1, 21, 2, 22, 3, 23, 4, 24, 5, 25]
+
+The method should have the following signature:
 ```shell script
-public static int countOdd(ArrayList<Integer> list) { }
+public static int[] perfectShuffle(int[] arr) { }
+```
+<br />
+
+[2] The second method is selectionShuffle(). This method takes an int array as input (the unshuffled array) and returns another int array (the shuffled array). Unlike perfect shuffle, selection shuffle works by incorporating randomness. The general code outline for selection shuffle is shown below:
+
+* Loop through the array of integers
+  * Swap each integer with another integer located at some random index of the array
+
+
+The method should have the following signature:
+```shell script
+public static int[] selectionShuffle(int[] arr) { }
 ```
 
-The next method is checkDuplicates(). This method takes two ArrayList\<Integer\> as input and returns true if there is a number that appears in both ArrayLists.
-```shell script
-public static boolean checkDuplicates(ArrayList<Integer> list1, ArrayList<Integer> list2) { }
-```
+<br />
 
-Finally, the last method is convertToArrayList(). This method takes an int[] as input and returns an ArrayList\<Integer\> contaiining the values from the int[].
-```shell script
-public static ArrayList<Integer> convertToArrayList(int[] arr) { }
-```
+[3] Finally, write some code in the main method to test your methods. 
 
 <br />
 <br />

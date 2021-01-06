@@ -1,22 +1,12 @@
-import java.util.ArrayList;
-
 public class MyMain {
 
-    // Counts the number of odd numbers in list
-    public static int countOdd(ArrayList<Integer> list) { 
-        // REPLACE WITH YOUR CODE
-        return 0;
+    // Shuffles an array, using the perfect shuffle algorithm
+    public static int[] perfectShuffle(int[] arr) { 
+        return null;
     }
 
-    // Returns true if there is an int that appears in both lists
-    public static boolean checkDuplicates(ArrayList<Integer> list1, ArrayList<Integer> list2) { 
-        // REPLACE WITH YOUR CODE
-        return false;
-    }
-
-    // Takes an int[] as input and returns the equivalent ArrayList<Integer>
-    public static ArrayList<Integer> convertToArrayList(int[] arr) { 
-        // REPLACE WITH YOUR CODE
+    // Shuffles an array, using the selection shuffle algorithm
+    public static int[] selectionShuffle(int[] arr) { 
         return null;
     }
 
