@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class MyTests {
 
@@ -17,8 +18,6 @@ public class MyTests {
 
     @Test
     public void testSelectionShuffle() {
-        @Test
-    public void testSelectionShuffle() {
         int[] arr = {1, 2, 3, 4, 5, 21, 22, 23, 24, 25};
         String str = Arrays.toString(arr);
 
@@ -32,6 +31,5 @@ public class MyTests {
         // Test that shuffled array contains the same values as the original (sorted) array
         Arrays.sort(arr2);
         assertEquals(str, Arrays.toString(arr2), "Your shuffled array contains different integers from the original array");
-    }
     }
 }
